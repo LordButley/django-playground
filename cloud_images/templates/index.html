@@ -5,7 +5,13 @@
 <h1>
     We have lift off
 </h1>
+<div>
+    {% for image in images %}
+    <div>
+        <img src="{{image.image.url}}"></div>
+    {% endfor %}
 
+</div>
 <div>
     <form method="POST" action="{% url 'cloud-home' %}" enctype="multipart/form-data">
         {% csrf_token %}
