@@ -1,0 +1,36 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  {% block meta %}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {% endblock %}
+
+  <!-- Bootstrap CSS -->
+  {% block corecss %}
+  {% endblock %}
+
+  {% block extra_css %}
+  {% endblock %}
+  
+  {% block corejs %}
+  {% endblock %}
+
+  <title>Django Playground {% block extra_title %}{% endblock %}</title>
+</head>
+
+<body>
+
+  {% block content %}
+  {% endblock %}
+
+  {% block postloadjs %}
+  {% endblock %}
+</body>
+
+</html>
