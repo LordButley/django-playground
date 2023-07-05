@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include("cloud_images.urls")),
+    path('cloudimages/', include("cloud_images.urls")),
+    path('datepicker/', include("djdatepicker.urls")),
 ]

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>
+    Date Picker standard view.
+</h1>
+
+<div>
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Submit Date</button>
+    </form>
+</div>
+
+
+{% endblock %}
