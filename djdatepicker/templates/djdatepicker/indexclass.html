@@ -13,13 +13,4 @@
     </form>
 </div>
 
-<div>
-    <form method="POST">
-        {% csrf_token %}
-        {{formb.as_p}}
-        <button type="submit">Submit Date</button>
-    </form>
-</div>
-
-
 {% endblock %}
