@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'cloud_images',
     'djdatepicker',
+    'djgsheets',
 ]
 
 MIDDLEWARE = [

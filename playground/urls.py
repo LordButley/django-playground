@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('cloudimages/', include("cloud_images.urls")),
     path('datepicker/', include("djdatepicker.urls")),
+    path('djgsheets/', include("djgsheets.urls")),
 ]
